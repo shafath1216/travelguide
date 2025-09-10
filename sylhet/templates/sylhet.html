@@ -1,0 +1,129 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sylhet - Travel Bangladesh</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen font-sans text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-gray-800">Travel Bangladesh</div>
+      <div class="space-x-4">
+        <a href="{% url 'cities' %}" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">Back to Cities</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Google Map -->
+  <div class="mt-24 w-full h-96">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.123456!2d91.8748!3d24.8949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3750693f1234567%3A0xabcdef123456789!2sSylhet%2C%20Bangladesh!5e0!3m2!1sen!2sbd!4v1694360000000" 
+      width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+  <!-- Attractions -->
+  <div class="container mx-auto px-6 mt-12">
+    <h1 class="text-4xl font-bold mb-12 text-center text-gray-800">Top Attractions in Sylhet</h1>
+
+    <!-- Attraction 1: Ratargul Swamp Forest -->
+    <div class="flex flex-col md:flex-row items-center mb-12">
+      <img src="{% static 'images/ratargul.jpg' %}" alt="Ratargul Swamp Forest" class="w-full md:w-1/2 rounded-lg shadow-lg">
+      <div class="md:ml-8 mt-6 md:mt-0">
+        <h2 class="text-2xl font-bold mb-4">Ratargul Swamp Forest</h2>
+        <p class="text-lg text-gray-700">One of the few freshwater swamp forests in Bangladesh, perfect for boating and nature photography.</p>
+        <p class="mt-2 font-semibold">Entry Fee: Free</p>
+      </div>
+    </div>
+
+    <!-- Attraction 2: Jaflong -->
+    <div class="flex flex-col md:flex-row items-center mb-12">
+      <img src="{% static 'images/jaflong.jpg' %}" alt="Jaflong" class="w-full md:w-1/2 rounded-lg shadow-lg">
+      <div class="md:ml-8 mt-6 md:mt-0">
+        <h2 class="text-2xl font-bold mb-4">Jaflong</h2>
+        <p class="text-lg text-gray-700">A scenic area near the Meghalaya border with stone collection activities and views of the Khasi hills.</p>
+        <p class="mt-2 font-semibold">Entry Fee: Free</p>
+      </div>
+    </div>
+
+    <!-- Attraction 3: Lawachara National Park -->
+    <div class="flex flex-col md:flex-row items-center mb-12">
+      <img src="{% static 'images/lawachara.jpg' %}" alt="Lawachara National Park" class="w-full md:w-1/2 rounded-lg shadow-lg">
+      <div class="md:ml-8 mt-6 md:mt-0">
+        <h2 class="text-2xl font-bold mb-4">Lawachara National Park</h2>
+        <p class="text-lg text-gray-700">A protected tropical forest home to the endangered hoolock gibbons, ideal for trekking and wildlife spotting.</p>
+        <p class="mt-2 font-semibold">Entry Fee: Free</p>
+      </div>
+    </div>
+
+    <!-- Attraction 4: Shahjalal University Mosque -->
+    <div class="flex flex-col md:flex-row items-center mb-12">
+      <img src="{% static 'images/Shah_Jalal_Mazar.jpg' %}" alt="Shahjalal University Mosque" class="w-full md:w-1/2 rounded-lg shadow-lg">
+      <div class="md:ml-8 mt-6 md:mt-0">
+        <h2 class="text-2xl font-bold mb-4">Shahjalal University Mosque</h2>
+        <p class="text-lg text-gray-700">A beautiful modern mosque located on the university campus, known for its impressive architecture and peaceful atmosphere.</p>
+        <p class="mt-2 font-semibold">Entry Fee: Free</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hotels -->
+  <div class="container mx-auto px-6 mt-16">
+    <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center">Hotels in Sylhet</h2>
+    <ul class="space-y-6 text-lg text-gray-700">
+      <li>
+        <strong>Hotel Noorjahan Grand</strong><br>
+        Address: Ambarkhana, Sylhet<br>
+        Phone: +880 1711-123456<br>
+        Website: N/A
+      </li>
+      <li>
+        <strong>Rose View Hotel</strong><br>
+        Address: Shahjalal Rd, Sylhet<br>
+        Phone: +880 1711-654321<br>
+        Website: N/A
+      </li>
+      <li>
+        <strong>Grand Sultan Tea Resort & Golf</strong><br>
+        Address: Sreemangal Rd, Sylhet<br>
+        Phone: +880 1711-987654<br>
+        Website: N/A
+      </li>
+    </ul>
+  </div>
+
+  <!-- Restaurants -->
+  <div class="container mx-auto px-6 mt-16 mb-20">
+    <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center">Restaurants in Sylhet</h2>
+    <ul class="space-y-6 text-lg text-gray-700">
+      <li>
+        <strong>Shahi Restaurant</strong><br>
+        Address: Ambarkhana, Sylhet<br>
+        Phone: +880 1711-112233
+      </li>
+      <li>
+        <strong>Royal Restaurant</strong><br>
+        Address: Zindabazar, Sylhet<br>
+        Phone: +880 1711-445566
+      </li>
+      <li>
+        <strong>Tea Heaven</strong><br>
+        Address: Sreemangal Rd, Sylhet<br>
+        Phone: +880 1711-778899
+      </li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-white shadow-inner py-6">
+    <div class="container mx-auto text-center text-gray-800">
+      &copy; 2025 Travel Bangladesh. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tangail - Travel Bangladesh</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen font-sans text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-gray-800">Travel Bangladesh</div>
+      <div class="space-x-4">
+        <a href="{% url 'cities' %}" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">Back to Cities</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Google Map -->
+  <div class="mt-24 w-full h-96">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.987654321!2d89.9167!3d24.2500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fb123456789abc%3A0x123456789abcdef!2sTangail%2C%20Bangladesh!5e0!3m2!1sen!2sbd!4v1694359500000" 
+      width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+  <!-- Attractions -->
+  <div class="container mx-auto px-6 mt-12">
+    <h1 class="text-4xl font-bold mb-12 text-center text-gray-800">Top Attractions in Tangail</h1>
+
+    <!-- Attraction 1: 201 Dome Mosque -->
+    <div class="flex flex-col md:flex-row items-center mb-12">
+      <img src="{% static 'images/dome.jpg' %}" alt="201 Dome Mosque" class="w-full md:w-1/2 rounded-lg shadow-lg">
+      <div class="md:ml-8 mt-6 md:mt-0">
+        <h2 class="text-2xl font-bold mb-4">201 Dome Mosque</h2>
+        <p class="text-lg text-gray-700">An iconic mosque in Tangail, famous for its stunning 201 domes and impressive Islamic architecture. Visitors can explore the mosque and enjoy its serene surroundings.</p>
+        <p class="mt-2 font-semibold">Entry Fee: Free</p>
+      </div>
+    </div>
+
+    <!-- Attraction 2: Jamalpur Bridge -->
+    <div class="flex flex-col md:flex-row items-center mb-12">
+      <img src="{% static 'images/jamalpur.jpg' %}" alt="Jamalpur Bridge" class="w-full md:w-1/2 rounded-lg shadow-lg">
+      <div class="md:ml-8 mt-6 md:mt-0">
+        <h2 class="text-2xl font-bold mb-4">Jamalpur Bridge</h2>
+        <p class="text-lg text-gray-700">A picturesque bridge connecting Tangail with nearby districts, offering scenic river views and peaceful walks.</p>
+        <p class="mt-2 font-semibold">Entry Fee: Free</p>
+      </div>
+    </div>
+
+    <!-- Attraction 3: Madhupur Forest -->
+    <div class="flex flex-col md:flex-row items-center mb-12">
+      <img src="{% static 'images/madhupur.jpg' %}" alt="Madhupur Forest" class="w-full md:w-1/2 rounded-lg shadow-lg">
+      <div class="md:ml-8 mt-6 md:mt-0">
+        <h2 class="text-2xl font-bold mb-4">Madhupur Forest</h2>
+        <p class="text-lg text-gray-700">A dense forest area great for trekking, bird watching, and exploring native flora and fauna.</p>
+        <p class="mt-2 font-semibold">Entry Fee: Free</p>
+      </div>
+    </div>
+
+    <!-- Attraction 4: Baraikandi Mosque -->
+    <div class="flex flex-col md:flex-row items-center mb-12">
+      <img src="{% static 'images/baraikandi.jpg' %}" alt="Baraikandi Mosque" class="w-full md:w-1/2 rounded-lg shadow-lg">
+      <div class="md:ml-8 mt-6 md:mt-0">
+        <h2 class="text-2xl font-bold mb-4">Baraikandi Mosque</h2>
+        <p class="text-lg text-gray-700">A historic mosque known for its unique architecture and cultural significance in Tangail. Visitors can explore the mosque's intricate designs and serene surroundings.</p>
+        <p class="mt-2 font-semibold">Entry Fee: Free</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hotels -->
+  <div class="container mx-auto px-6 mt-16">
+    <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center">Hotels in Tangail</h2>
+    <ul class="space-y-6 text-lg text-gray-700">
+      <li>
+        <strong>Tangail View Hotel</strong><br>
+        Address: 22 College Road, Tangail<br>
+        Phone: +880 1710-123456<br>
+        Website: N/A
+      </li>
+      <li>
+        <strong>Hotel Silver Line</strong><br>
+        Address: 15 Main Street, Tangail<br>
+        Phone: +880 1710-654321<br>
+        Website: N/A
+      </li>
+      <li>
+        <strong>Rang Mahal Hotel</strong><br>
+        Address: 9 Kazi Nazrul Islam Road, Tangail<br>
+        Phone: +880 1710-987654<br>
+        Website: N/A
+      </li>
+    </ul>
+  </div>
+
+  <!-- Restaurants -->
+  <div class="container mx-auto px-6 mt-16 mb-20">
+    <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center">Restaurants in Tangail</h2>
+    <ul class="space-y-6 text-lg text-gray-700">
+      <li>
+        <strong>Shanti Restaurant</strong><br>
+        Address: College Road, Tangail<br>
+        Phone: +880 1710-112233
+      </li>
+      <li>
+        <strong>Royal Dhaba</strong><br>
+        Address: Main Street, Tangail<br>
+        Phone: +880 1710-445566
+      </li>
+      <li>
+        <strong>Golden Spoon</strong><br>
+        Address: Market Road, Tangail<br>
+        Phone: +880 1710-778899
+      </li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-white shadow-inner py-6">
+    <div class="container mx-auto text-center text-gray-800">
+      &copy; 2025 Travel Bangladesh. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>

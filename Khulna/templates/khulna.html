@@ -1,0 +1,145 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khulna - Bangladesh Travel Guide</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen font-sans text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-gray-800">Travel Bangladesh</div>
+      <div class="space-x-4">
+        <a href="{% url 'cities' %}" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition">Back to Cities</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container mx-auto mt-28 px-6">
+
+    <h1 class="text-4xl font-bold text-gray-800 mb-8 text-center">Explore Khulna</h1>
+
+    <!-- Google Map -->
+    <section class="mb-12">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.1985568925127!2d89.5600!3d22.8456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff9b5a0bba5a2d%3A0x2f730b5c77d26f1b!2sKhulna!5e0!3m2!1sen!2sbd!4v1694341200000"
+        width="100%"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+
+    <!-- Attractions Section -->
+    <section class="space-y-12">
+      <!-- Sundarbans Mangrove Forest (Image Left) -->
+      <article class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6">
+        <img src="{% static 'images/sundarban.jpg' %}" alt="Sundarbans" class="w-full md:w-1/2 h-auto object-contain rounded-lg shadow-md">
+        <div class="md:w-1/2">
+          <h2 class="text-3xl font-bold text-gray-800 mb-2">Sundarbans Mangrove Forest</h2>
+          <p class="text-lg text-gray-700 mb-2">
+            The Sundarbans, a UNESCO World Heritage Site, is the world’s largest mangrove forest and home to the famous Royal Bengal Tiger. Visitors can explore rivers, canals, and wildlife sanctuaries by boat. It is a paradise for bird watchers, photographers, and nature lovers.
+          </p>
+          <p class="text-gray-600 font-semibold text-lg">Entry Fee: 150 BDT (Local), 1500 BDT (Foreigners)</p>
+        </div>
+      </article>
+
+      <!-- Sixty Dome Mosque (Image Right) -->
+      <article class="flex flex-col md:flex-row-reverse items-center md:items-start space-y-4 md:space-y-0 md:space-x-6 md:space-x-reverse">
+        <img src="{% static 'images/mosque.jpg' %}" alt="Sixty Dome Mosque" class="w-full md:w-1/2 h-auto object-contain rounded-lg shadow-md">
+        <div class="md:w-1/2">
+          <h2 class="text-3xl font-bold text-gray-800 mb-2">Sixty Dome Mosque</h2>
+          <p class="text-lg text-gray-700 mb-2">
+            The historic Sixty Dome Mosque in Bagerhat is one of the most significant Islamic architectural sites in Bangladesh. Built in the 15th century, it is famous for its massive structure, terracotta design, and serene surroundings.
+          </p>
+          <p class="text-gray-600 font-semibold text-lg">Entry Fee: 20 BDT</p>
+        </div>
+      </article>
+
+      <!-- Khan Jahan Ali's Tomb (Image Left) -->
+      <article class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6">
+        <img src="{% static 'images/khanali.jpg' %}" alt="Khan Jahan Ali's Tomb" class="w-full md:w-1/2 h-auto object-contain rounded-lg shadow-md">
+        <div class="md:w-1/2">
+          <h2 class="text-3xl font-bold text-gray-800 mb-2">Khan Jahan Ali's Tomb</h2>
+          <p class="text-lg text-gray-700 mb-2">
+            The tomb of Khan Jahan Ali, the founder of Bagerhat, is a sacred site surrounded by a beautiful lake. It is both a spiritual and historical place where visitors can learn about medieval architecture and local legends.
+          </p>
+          <p class="text-gray-600 font-semibold text-lg">Entry Fee: Free</p>
+        </div>
+      </article>
+
+      <!-- Rupsha River (Image Right) -->
+      <article class="flex flex-col md:flex-row-reverse items-center md:items-start space-y-4 md:space-y-0 md:space-x-6 md:space-x-reverse">
+        <img src="{% static 'images/rupsha.jpg' %}" alt="Rupsha River" class="w-full md:w-1/2 h-auto object-contain rounded-lg shadow-md">
+        <div class="md:w-1/2">
+          <h2 class="text-3xl font-bold text-gray-800 mb-2">Rupsha River</h2>
+          <p class="text-lg text-gray-700 mb-2">
+            The Rupsha River is an iconic river in Khulna, known for its scenic beauty and boat rides. It plays a major role in the city’s economy and is perfect for sunset views, photography, and enjoying fresh river fish at nearby eateries.
+          </p>
+          <p class="text-gray-600 font-semibold text-lg">Entry Fee: Free</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Hotels Section -->
+    <section class="space-y-4 mt-12">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">Hotels in Khulna</h2>
+      <ul class="bg-white rounded-xl shadow-md divide-y divide-gray-200">
+        <li class="p-4">
+          <h3 class="font-semibold text-gray-800">City Inn Khulna</h3>
+          <p class="text-gray-600 text-lg mt-1">Address: Babu Khan Road, Khulna</p>
+          <p class="text-gray-600 text-lg">Phone: +880 1713-223344</p>
+          <p class="text-gray-600 text-lg">Website: cityinnkhulna.com</p>
+        </li>
+        <li class="p-4">
+          <h3 class="font-semibold text-gray-800">Hotel Castle Salam</h3>
+          <p class="text-gray-600 text-lg mt-1">Address: Gollamari, Khulna</p>
+          <p class="text-gray-600 text-lg">Phone: +880 1713-445566</p>
+          <p class="text-gray-600 text-lg">Website: castlesalam.com</p>
+        </li>
+        <li class="p-4">
+          <h3 class="font-semibold text-gray-800">Hotel Royal International</h3>
+          <p class="text-gray-600 text-lg mt-1">Address: Shibbari More, Khulna</p>
+          <p class="text-gray-600 text-lg">Phone: +880 1713-556677</p>
+          <p class="text-gray-600 text-lg">Website: N/A</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Restaurants Section -->
+    <section class="space-y-4 mt-12 mb-12">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">Restaurants in Khulna</h2>
+      <ul class="bg-white rounded-xl shadow-md divide-y divide-gray-200">
+        <li class="p-4">
+          <h3 class="font-semibold text-gray-800">Deshi Kitchen</h3>
+          <p class="text-gray-600 text-lg mt-1">Address: Shibbari Road, Khulna</p>
+          <p class="text-gray-600 text-lg">Phone: +880 1713-667788</p>
+          <p class="text-gray-600 text-lg">Website: N/A</p>
+        </li>
+        <li class="p-4">
+          <h3 class="font-semibold text-gray-800">Handi Restaurant</h3>
+          <p class="text-gray-600 text-lg mt-1">Address: KDA Avenue, Khulna</p>
+          <p class="text-gray-600 text-lg">Phone: +880 1713-778899</p>
+          <p class="text-gray-600 text-lg">Website: handirestaurant.com</p>
+        </li>
+      </ul>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="mt-16 bg-white shadow-inner py-6">
+    <div class="container mx-auto text-center text-gray-600">
+      &copy; 2025 Travel Bangladesh. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barisal - Bangladesh Travel Guide</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen font-sans text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-gray-800">Travel Bangladesh</div>
+      <div class="space-x-4">
+        <a href="{% url 'cities' %}" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition">Back to Cities</a>
+  
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container mx-auto mt-28 px-6">
+
+    <h1 class="text-4xl font-bold text-gray-800 mb-8 text-center">Explore Barisal</h1>
+
+    <!-- Google Map -->
+    <section class="mb-12">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.987743856851!2d90.35613247514452!3d22.701548585111404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b0b8ab5c03b5%3A0x19bcd47e9c128c84!2sBarisal%2C%20Bangladesh!5e0!3m2!1sen!2sus!4v1694341200000" 
+        width="100%" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+
+    <!-- Attractions Section -->
+    <section class="space-y-12">
+      <!-- Kuakata Beach (Image Left) -->
+      <article class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6">
+        <img src="{% static 'images/kuakata.jpg' %}" alt="Kuakata Beach" class="w-full md:w-1/2 h-auto object-contain rounded-lg shadow-md">
+        <div class="md:w-1/2">
+          <h2 class="text-3xl font-bold text-gray-800 mb-2">Kuakata Beach</h2>
+          <p class="text-lg text-gray-700 mb-2">
+            Kuakata Beach is famously known as the "Daughter of the Sea" and offers an unparalleled 180-degree view of both sunrise and sunset over the Bay of Bengal. Visitors can enjoy long walks on the sandy shore, local seafood delicacies, and traditional fishing activities. The beach is surrounded by lush greenery, small local villages, and is a perfect spot for photography enthusiasts.
+          </p>
+          <p class="text-gray-600 font-semibold text-lg">Entry Fee: Free</p>
+        </div>
+      </article>
+
+      <!-- Floating Market (Image Right) -->
+      <article class="flex flex-col md:flex-row-reverse items-center md:items-start space-y-4 md:space-y-0 md:space-x-6 md:space-x-reverse">
+        <img src="{% static 'images/floating_market.jpg' %}" alt="Floating Market" class="w-full md:w-1/2 h-auto object-contain rounded-lg shadow-md">
+        <div class="md:w-1/2">
+          <h2 class="text-3xl font-bold text-gray-800 mb-2">Floating Market</h2>
+          <p class="text-lg text-gray-700 mb-2">
+            The Floating Market of Barisal is a vibrant and traditional riverside market where traders sell fruits, vegetables, fish, and handicrafts directly from their boats. Visitors can experience the bustling activity, interact with locals, and even take a boat ride to explore the canals. The market is especially lively during early mornings when fresh produce arrives from surrounding villages.
+          </p>
+          <p class="text-gray-600 font-semibold text-lg">Entry Fee: Free</p>
+        </div>
+      </article>
+
+      <!-- Durga Sagar (Image Left) -->
+      <article class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6">
+        <img src="{% static 'images/durga_sagar.jpg' %}" alt="Durga Sagar" class="w-full md:w-1/2 h-auto object-contain rounded-lg shadow-md">
+        <div class="md:w-1/2">
+          <h2 class="text-3xl font-bold text-gray-800 mb-2">Durga Sagar</h2>
+          <p class="text-lg text-gray-700 mb-2">
+            Durga Sagar is the largest pond in Barisal, spanning over several acres. The site is surrounded by ancient temples and is an important cultural and spiritual center for locals. Visitors can enjoy serene boat rides, witness traditional rituals, and explore the rich biodiversity of the area including migratory birds during certain seasons. It's a peaceful getaway in the heart of the city.
+          </p>
+          <p class="text-gray-600 font-semibold text-lg">Entry Fee: 20 BDT</p>
+        </div>
+      </article>
+
+      <!-- Baliatoli Mosque (Image Right) -->
+      <article class="flex flex-col md:flex-row-reverse items-center md:items-start space-y-4 md:space-y-0 md:space-x-6 md:space-x-reverse">
+        <img src="{% static 'images/barisal_baliatoli_mosque.jpg' %}" alt="Baliatoli Mosque" class="w-full md:w-1/2 h-auto object-contain rounded-lg shadow-md">
+        <div class="md:w-1/2">
+          <h2 class="text-3xl font-bold text-gray-800 mb-2">Baliatoli Mosque</h2>
+          <p class="text-lg text-gray-700 mb-2">
+            Baliatoli Mosque is a historic mosque known for its exquisite Mughal-era architecture and intricate carvings. It has served as a spiritual center for the local Muslim community for centuries. The mosque is surrounded by gardens and small markets, offering visitors a blend of cultural heritage, religious history, and traditional Barisal charm.
+          </p>
+          <p class="text-gray-600 font-semibold text-lg">Entry Fee: Free</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Hotels Section -->
+    <section class="space-y-4 mt-12">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">Hotels in Barisal</h2>
+      <ul class="bg-white rounded-xl shadow-md divide-y divide-gray-200">
+        <li class="p-4">
+          <h3 class="font-semibold text-gray-800">Hotel Noorjahan</h3>
+          <p class="text-gray-600 text-lg mt-1">Address: 123 Kuakata Road, Barisal</p>
+          <p class="text-gray-600 text-lg">Phone: +880 1711-234567</p>
+          <p class="text-gray-600 text-lg">Website: hotelnoorjahan.com</p>
+        </li>
+        <li class="p-4">
+          <h3 class="font-semibold text-gray-800">Barisal Regency Hotel</h3>
+          <p class="text-gray-600 text-lg mt-1">Address: 45 College Road, Barisal</p>
+          <p class="text-gray-600 text-lg">Phone: +880 1711-765432</p>
+          <p class="text-gray-600 text-lg">Website: barisalregency.com</p>
+        </li>
+        <li class="p-4">
+          <h3 class="font-semibold text-gray-800">Grand Barisal Hotel</h3>
+          <p class="text-gray-600 text-lg mt-1">Address: 78 Kazi Nazrul Islam Road, Barisal</p>
+          <p class="text-gray-600 text-lg">Phone: +880 1711-987654</p>
+          <p class="text-gray-600 text-lg">Website: N/A</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Restaurants Section -->
+    <section class="space-y-4 mt-12 mb-12">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">Restaurants in Barisal</h2>
+      <ul class="bg-white rounded-xl shadow-md divide-y divide-gray-200">
+        <li class="p-4">
+          <h3 class="font-semibold text-gray-800">Sundarban Restaurant</h3>
+          <p class="text-gray-600 text-lg mt-1">Address: 22 Kuakata Road, Barisal</p>
+          <p class="text-gray-600 text-lg">Phone: +880 1711-223344</p>
+          <p class="text-gray-600 text-lg">Website: sundarbanrestaurant.com</p>
+        </li>
+        <li class="p-4">
+          <h3 class="font-semibold text-gray-800">Ruposhi Bangla</h3>
+          <p class="text-gray-600 text-lg mt-1">Address: 15 College Road, Barisal</p>
+          <p class="text-gray-600 text-lg">Phone: +880 1711-334455</p>
+          <p class="text-gray-600 text-lg">Website: N/A</p>
+        </li>
+      </ul>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="mt-16 bg-white shadow-inner py-6">
+    <div class="container mx-auto text-center text-gray-600">
+      &copy; 2025 Travel Bangladesh. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>

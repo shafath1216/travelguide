@@ -1,0 +1,146 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cox's Bazar - Bangladesh Travel Guide</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen font-sans text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-gray-800">Travel Bangladesh</div>
+      <div class="space-x-4">
+        <a href="{% url 'cities' %}" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition">Back to Cities</a>
+     
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container mx-auto mt-28 px-6">
+
+    <h1 class="text-4xl font-bold text-gray-800 mb-8 text-center">Explore Cox's Bazar</h1>
+
+    <!-- Google Map -->
+    <section class="mb-12">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.123456789!2d91.9600!3d21.4350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3750555555555555%3A0x123456789abcdef!2sCox%27s%20Bazar%2C%20Bangladesh!5e0!3m2!1sen!2sus!4v1694341200000" 
+        width="100%" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+
+    <!-- Attractions Section -->
+    <section class="space-y-12">
+      <!-- Cox's Bazar Beach (Image Left) -->
+      <article class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6">
+        <img src="{% static 'images/cox_beach.jpg' %}" alt="Cox's Bazar Beach" class="w-full md:w-1/2 h-auto object-contain rounded-lg shadow-md">
+        <div class="md:w-1/2">
+          <h2 class="text-3xl font-bold text-gray-800 mb-2">Cox's Bazar Beach</h2>
+          <p class="text-lg text-gray-700 mb-2">
+            Cox's Bazar Beach is the longest natural sea beach in the world, stretching over 120 km. Visitors can enjoy long walks on golden sands, sunset views, water sports, and beachside markets. It is a paradise for photography enthusiasts and travelers seeking relaxation along the Bay of Bengal.
+          </p>
+          <p class="text-gray-600 font-semibold text-lg">Entry Fee: Free</p>
+        </div>
+      </article>
+
+      <!-- Himchari Waterfall & Park (Image Right) -->
+      <article class="flex flex-col md:flex-row-reverse items-center md:items-start space-y-4 md:space-y-0 md:space-x-6 md:space-x-reverse">
+        <img src="{% static 'images/himchari_waterfall.jpg' %}" alt="Himchari Waterfall" class="w-full md:w-1/2 h-auto object-contain rounded-lg shadow-md">
+        <div class="md:w-1/2">
+          <h2 class="text-3xl font-bold text-gray-800 mb-2">Himchari Waterfall & Park</h2>
+          <p class="text-lg text-gray-700 mb-2">
+            Himchari is famous for its stunning waterfall and lush green hill park. Visitors can trek through scenic paths, enjoy panoramic views of the sea, and relax amidst nature. It’s a perfect day trip destination from Cox's Bazar city center.
+          </p>
+          <p class="text-gray-600 font-semibold text-lg">Entry Fee: 50 BDT</p>
+        </div>
+      </article>
+
+      <!-- Inani Beach (Image Left) -->
+      <article class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6">
+        <img src="{% static 'images/inani_beach.jpg' %}" alt="Inani Beach" class="w-full md:w-1/2 h-auto object-contain rounded-lg shadow-md">
+        <div class="md:w-1/2">
+          <h2 class="text-3xl font-bold text-gray-800 mb-2">Inani Beach</h2>
+          <p class="text-lg text-gray-700 mb-2">
+            Inani Beach is known for its crystal-clear waters, coral stones, and tranquil atmosphere. A favorite among tourists seeking peace away from the city beach, it’s ideal for swimming, picnics, and nature photography. The beach is accessible by road from Cox's Bazar.
+          </p>
+          <p class="text-gray-600 font-semibold text-lg">Entry Fee: Free</p>
+        </div>
+      </article>
+
+      <!-- Maheshkhali Island (Image Right) -->
+      <article class="flex flex-col md:flex-row-reverse items-center md:items-start space-y-4 md:space-y-0 md:space-x-6 md:space-x-reverse">
+        <img src="{% static 'images/moheshkhali.png' %}" alt="Maheshkhali Island" class="w-full md:w-1/2 h-auto object-contain rounded-lg shadow-md">
+        <div class="md:w-1/2">
+          <h2 class="text-3xl font-bold text-gray-800 mb-2">Maheshkhali Island</h2>
+          <p class="text-lg text-gray-700 mb-2">
+            Maheshkhali Island is a serene island near Cox's Bazar, famous for its Hindu temples, coconut plantations, and unique culture. Visitors can enjoy boat rides, local seafood, and experience the traditional lifestyle of the island community. Ideal for travelers seeking both culture and nature.
+          </p>
+          <p class="text-gray-600 font-semibold text-lg">Entry Fee: Free</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Hotels Section -->
+    <section class="space-y-4 mt-12">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">Hotels in Cox's Bazar</h2>
+      <ul class="bg-white rounded-xl shadow-md divide-y divide-gray-200">
+        <li class="p-4">
+          <h3 class="font-semibold text-gray-800">Sayeman Beach Resort</h3>
+          <p class="text-gray-600 text-lg mt-1">Address: Kolatoli Road, Cox's Bazar</p>
+          <p class="text-gray-600 text-lg">Phone: +880 1712-345678</p>
+          <p class="text-gray-600 text-lg">Website: sayemanresort.com</p>
+        </li>
+        <li class="p-4">
+          <h3 class="font-semibold text-gray-800">Long Beach Hotel</h3>
+          <p class="text-gray-600 text-lg mt-1">Address: Link Road, Cox's Bazar</p>
+          <p class="text-gray-600 text-lg">Phone: +880 1712-876543</p>
+          <p class="text-gray-600 text-lg">Website: longbeachhotel.com</p>
+        </li>
+        <li class="p-4">
+          <h3 class="font-semibold text-gray-800">Hotel Sea Pearl</h3>
+          <p class="text-gray-600 text-lg mt-1">Address: 12 Beach Road, Cox's Bazar</p>
+          <p class="text-gray-600 text-lg">Phone: +880 1712-987654</p>
+          <p class="text-gray-600 text-lg">Website: N/A</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Restaurants Section -->
+    <section class="space-y-4 mt-12 mb-12">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">Restaurants in Cox's Bazar</h2>
+      <ul class="bg-white rounded-xl shadow-md divide-y divide-gray-200">
+        <li class="p-4">
+          <h3 class="font-semibold text-gray-800">Ocean Restaurant</h3>
+          <p class="text-gray-600 text-lg mt-1">Address: Kolatoli Road, Cox's Bazar</p>
+          <p class="text-gray-600 text-lg">Phone: +880 1712-223344</p>
+          <p class="text-gray-600 text-lg">Website: oceanrestaurant.com</p>
+        </li>
+        <li class="p-4">
+          <h3 class="font-semibold text-gray-800">Royal Thai</h3>
+          <p class="text-gray-600 text-lg mt-1">Address: Link Road, Cox's Bazar</p>
+          <p class="text-gray-600 text-lg">Phone: +880 1712-334455</p>
+          <p class="text-gray-600 text-lg">Website: N/A</p>
+        </li>
+      </ul>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="mt-16 bg-white shadow-inner py-6">
+    <div class="container mx-auto text-center text-gray-600">
+      &copy; 2025 Travel Bangladesh. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>

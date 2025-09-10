@@ -1,0 +1,129 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chittagong - Travel Bangladesh</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen font-sans text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-gray-800">Travel Bangladesh</div>
+      <div class="space-x-4">
+        <a href="{% url 'cities' %}" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">Back to Cities</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Google Map -->
+  <div class="mt-24 w-full h-96">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.123456789!2d91.7832!3d22.3569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adc1a5f0f1e2f5%3A0x123456789abcdef!2sChittagong%2C%20Bangladesh!5e0!3m2!1sen!2sbd!4v1694359000000" 
+      width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+  <!-- Attractions -->
+  <div class="container mx-auto px-6 mt-12">
+    <h1 class="text-4xl font-bold mb-12 text-center text-gray-800">Top Attractions in Chittagong</h1>
+
+    <!-- Attraction 1 -->
+    <div class="flex flex-col md:flex-row items-center mb-12">
+      <img src="{% static 'images/patenga.jpg' %}" alt="Patenga Beach" class="w-full md:w-1/2 rounded-lg shadow-lg">
+      <div class="md:ml-8 mt-6 md:mt-0">
+        <h2 class="text-2xl font-bold mb-4">Patenga Beach</h2>
+        <p class="text-lg text-gray-700">A popular urban beach near Chittagong city where visitors enjoy seaside walks, local seafood, and sunset views.</p>
+        <p class="mt-2 font-semibold">Entry Fee: Free</p>
+      </div>
+    </div>
+
+    <!-- Attraction 2 -->
+    <div class="flex flex-col md:flex-row items-center mb-12">
+      <img src="{% static 'images/foys.jpg' %}" alt="Foy's Lake" class="w-full md:w-1/2 rounded-lg shadow-lg">
+      <div class="md:ml-8 mt-6 md:mt-0">
+        <h2 class="text-2xl font-bold mb-4">Foy's Lake</h2>
+        <p class="text-lg text-gray-700">An artificial lake with amusement park, boating, and scenic views of hills. A favorite for families and tourists.</p>
+        <p class="mt-2 font-semibold">Entry Fee: 50 BDT</p>
+      </div>
+    </div>
+
+    <!-- Attraction 3 -->
+    <div class="flex flex-col md:flex-row items-center mb-12">
+      <img src="{% static 'images/karnaphuli.jpg' %}" alt="Karnaphuli River" class="w-full md:w-1/2 rounded-lg shadow-lg">
+      <div class="md:ml-8 mt-6 md:mt-0">
+        <h2 class="text-2xl font-bold mb-4">Karnaphuli River</h2>
+        <p class="text-lg text-gray-700">A major river with scenic cruises, sunset views, and a glimpse into Chittagong’s shipping and trade life.</p>
+        <p class="mt-2 font-semibold">Entry Fee: Free</p>
+      </div>
+    </div>
+
+    <!-- Attraction 4 -->
+    <div class="flex flex-col md:flex-row items-center mb-12">
+      <img src="{% static 'images/hill.jpg' %}" alt="Chittagong Hill Tracts" class="w-full md:w-1/2 rounded-lg shadow-lg">
+      <div class="md:ml-8 mt-6 md:mt-0">
+        <h2 class="text-2xl font-bold mb-4">Chittagong Hill Tracts</h2>
+        <p class="text-lg text-gray-700">A scenic hilly region with tribal villages, trekking trails, waterfalls, and rich biodiversity. Perfect for adventure seekers.</p>
+        <p class="mt-2 font-semibold">Entry Fee: Free</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hotels -->
+  <div class="container mx-auto px-6 mt-16">
+    <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center">Hotels in Chittagong</h2>
+    <ul class="space-y-6 text-lg text-gray-700">
+      <li>
+        <strong>Radisson Blu Chittagong Bay View</strong><br>
+        Address: 1439 CDA Avenue, Chittagong<br>
+        Phone: +880 31-2812222<br>
+        Website: <a href="https://www.radissonhotels.com" target="_blank" class="text-blue-500 underline">radissonhotels.com</a>
+      </li>
+      <li>
+        <strong>Hotel Agrabad</strong><br>
+        Address: 68 Agrabad C/A, Chittagong<br>
+        Phone: +880 31-716101<br>
+        Website: N/A
+      </li>
+      <li>
+        <strong>The Peninsula Chittagong</strong><br>
+        Address: 21 DC Avenue, Chittagong<br>
+        Phone: +880 31-715678<br>
+        Website: <a href="https://www.peninsula.com" target="_blank" class="text-blue-500 underline">peninsula.com</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Restaurants -->
+  <div class="container mx-auto px-6 mt-16 mb-20">
+    <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center">Restaurants in Chittagong</h2>
+    <ul class="space-y-6 text-lg text-gray-700">
+      <li>
+        <strong>Bohubrihi Restaurant</strong><br>
+        Address: Khulshi, Chittagong<br>
+        Phone: +880 31-654321
+      </li>
+      <li>
+        <strong>Handi Restaurant</strong><br>
+        Address: Agrabad C/A, Chittagong<br>
+        Phone: +880 31-654987
+      </li>
+      <li>
+        <strong>Mezbaan Restaurant</strong><br>
+        Address: GEC Circle, Chittagong<br>
+        Phone: +880 31-657432
+      </li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-white shadow-inner py-6">
+    <div class="container mx-auto text-center text-gray-800">
+      &copy; 2025 Travel Bangladesh. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>

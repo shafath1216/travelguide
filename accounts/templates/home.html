@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bangladesh Travel Guide</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="fixed w-full z-50 bg-white bg-opacity-80 shadow-md">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-gray-800">Travel Bangladesh</div>
+      <div class="space-x-4">
+        <a href="{% url 'login' %}" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition">Login</a>
+        <a href="{% url 'signup' %}" class="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative w-full">
+    <img src="{% static 'images/bdtravelguide.png' %}" alt="Bangladesh Travel Guide" class="w-full h-auto object-contain">
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center text-center px-4">
+      <h1 class="text-4xl md:text-6xl font-bold text-white drop-shadow-lg">Bangladesh Travel Guide</h1>
+      <p class="mt-4 text-xl md:text-2xl text-white drop-shadow-md">Explore the beauty of Bangladesh</p>
+      <div class="mt-6 space-x-4">
+        <a href="{% url 'login' %}" class="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">Login</a>
+        <a href="{% url 'signup' %}" class="px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition">Sign Up</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
